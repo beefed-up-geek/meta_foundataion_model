@@ -1,0 +1,177 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are crafting in Minecraft. You need to decide on the next action.\n\nCrafting Grid: The crafting table is organized into a 3x3 grid. Each slot in the grid has a unique identifier:\n    - Top row: [A1] [A2] [A3]\n    - Middle row: [B1] [B2] [B3]\n    - Bottom row: [C1] [C2] [C3]\n\nThe output of the crafting process is placed in a designated output slot labeled [0] You cannot move or smelt items directly into slot [0]\n\nInventory Slots: The remaining inventory slots (outside of the crafting grid) are used for storing items. These slots are labeled as [I1] to [I36]\n\nActions:\n\t- move: Transfer a specific quantity of an item from one slot to another\n\t- smelt: Smelt an item in a furnace and moves the output to a specific slot\n\nFormat\n\t- `move: from [Source] to [Target] with quantity N`\n\t- `smelt: from [Source] to [Target] with quantity N`\n\nExample:\n    - `move: from [I2] to [A1] with quantity 3`\n    - `smelt: from [I5] to [I6] with quantity 1`\n\nConstraints:\n   - You cannot move or smelt items into [0]\n   - If an item is not in slot [0] then the recipe is incorrect\n   - You need to move items from [0] to a free inventory slot to complete the crafting process"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: lantern\ninventory:\n - iron_sword [I1] quantity 1\n - yellow_dye [I3] quantity 30\n - coal [I7] quantity 1\n - iron_sword [I8] quantity 1\n - iron_sword [I9] quantity 1\n - iron_sword [I13] quantity 1\n - iron_sword [I14] quantity 1\n - iron_sword [I16] quantity 1\n - iron_sword [I23] quantity 1\n - lingering_potion [I24] quantity 1\n - polished_andesite_slab [I27] quantity 34\n - iron_sword [I30] quantity 1\n - stick [I31] quantity 1\n - grass [I33] quantity 64"
+    },
+    {
+      "role": "assistant",
+      "content": "smelt: from [I1] to [I2] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: lantern\ninventory:\n - iron_nugget [I2] quantity 1\n - yellow_dye [I3] quantity 30\n - coal [I7] quantity 1\n - iron_sword [I8] quantity 1\n - iron_sword [I9] quantity 1\n - iron_sword [I13] quantity 1\n - iron_sword [I14] quantity 1\n - iron_sword [I16] quantity 1\n - iron_sword [I23] quantity 1\n - lingering_potion [I24] quantity 1\n - polished_andesite_slab [I27] quantity 34\n - iron_sword [I30] quantity 1\n - stick [I31] quantity 1\n - grass [I33] quantity 64"
+    },
+    {
+      "role": "assistant",
+      "content": "smelt: from [I8] to [I4] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: lantern\ninventory:\n - iron_nugget [I2] quantity 1\n - yellow_dye [I3] quantity 30\n - iron_nugget [I4] quantity 1\n - coal [I7] quantity 1\n - iron_sword [I9] quantity 1\n - iron_sword [I13] quantity 1\n - iron_sword [I14] quantity 1\n - iron_sword [I16] quantity 1\n - iron_sword [I23] quantity 1\n - lingering_potion [I24] quantity 1\n - polished_andesite_slab [I27] quantity 34\n - iron_sword [I30] quantity 1\n - stick [I31] quantity 1\n - grass [I33] quantity 64"
+    },
+    {
+      "role": "assistant",
+      "content": "smelt: from [I9] to [I5] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: lantern\ninventory:\n - iron_nugget [I2] quantity 1\n - yellow_dye [I3] quantity 30\n - iron_nugget [I4] quantity 1\n - iron_nugget [I5] quantity 1\n - coal [I7] quantity 1\n - iron_sword [I13] quantity 1\n - iron_sword [I14] quantity 1\n - iron_sword [I16] quantity 1\n - iron_sword [I23] quantity 1\n - lingering_potion [I24] quantity 1\n - polished_andesite_slab [I27] quantity 34\n - iron_sword [I30] quantity 1\n - stick [I31] quantity 1\n - grass [I33] quantity 64"
+    },
+    {
+      "role": "assistant",
+      "content": "smelt: from [I13] to [I6] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: lantern\ninventory:\n - iron_nugget [I2] quantity 1\n - yellow_dye [I3] quantity 30\n - iron_nugget [I4] quantity 1\n - iron_nugget [I5] quantity 1\n - iron_nugget [I6] quantity 1\n - coal [I7] quantity 1\n - iron_sword [I14] quantity 1\n - iron_sword [I16] quantity 1\n - iron_sword [I23] quantity 1\n - lingering_potion [I24] quantity 1\n - polished_andesite_slab [I27] quantity 34\n - iron_sword [I30] quantity 1\n - stick [I31] quantity 1\n - grass [I33] quantity 64"
+    },
+    {
+      "role": "assistant",
+      "content": "smelt: from [I14] to [I8] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: lantern\ninventory:\n - iron_nugget [I2] quantity 1\n - yellow_dye [I3] quantity 30\n - iron_nugget [I4] quantity 1\n - iron_nugget [I5] quantity 1\n - iron_nugget [I6] quantity 1\n - coal [I7] quantity 1\n - iron_nugget [I8] quantity 1\n - iron_sword [I16] quantity 1\n - iron_sword [I23] quantity 1\n - lingering_potion [I24] quantity 1\n - polished_andesite_slab [I27] quantity 34\n - iron_sword [I30] quantity 1\n - stick [I31] quantity 1\n - grass [I33] quantity 64"
+    },
+    {
+      "role": "assistant",
+      "content": "smelt: from [I16] to [I9] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: lantern\ninventory:\n - iron_nugget [I2] quantity 1\n - yellow_dye [I3] quantity 30\n - iron_nugget [I4] quantity 1\n - iron_nugget [I5] quantity 1\n - iron_nugget [I6] quantity 1\n - coal [I7] quantity 1\n - iron_nugget [I8] quantity 1\n - iron_nugget [I9] quantity 1\n - iron_sword [I23] quantity 1\n - lingering_potion [I24] quantity 1\n - polished_andesite_slab [I27] quantity 34\n - iron_sword [I30] quantity 1\n - stick [I31] quantity 1\n - grass [I33] quantity 64"
+    },
+    {
+      "role": "assistant",
+      "content": "smelt: from [I23] to [I10] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: lantern\ninventory:\n - iron_nugget [I2] quantity 1\n - yellow_dye [I3] quantity 30\n - iron_nugget [I4] quantity 1\n - iron_nugget [I5] quantity 1\n - iron_nugget [I6] quantity 1\n - coal [I7] quantity 1\n - iron_nugget [I8] quantity 1\n - iron_nugget [I9] quantity 1\n - iron_nugget [I10] quantity 1\n - lingering_potion [I24] quantity 1\n - polished_andesite_slab [I27] quantity 34\n - iron_sword [I30] quantity 1\n - stick [I31] quantity 1\n - grass [I33] quantity 64"
+    },
+    {
+      "role": "assistant",
+      "content": "smelt: from [I30] to [I11] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: lantern\ninventory:\n - iron_nugget [I2] quantity 1\n - yellow_dye [I3] quantity 30\n - iron_nugget [I4] quantity 1\n - iron_nugget [I5] quantity 1\n - iron_nugget [I6] quantity 1\n - coal [I7] quantity 1\n - iron_nugget [I8] quantity 1\n - iron_nugget [I9] quantity 1\n - iron_nugget [I10] quantity 1\n - iron_nugget [I11] quantity 1\n - lingering_potion [I24] quantity 1\n - polished_andesite_slab [I27] quantity 34\n - stick [I31] quantity 1\n - grass [I33] quantity 64"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I7] to [A1] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: lantern\ninventory:\n - coal [A1] quantity 1\n - iron_nugget [I2] quantity 1\n - yellow_dye [I3] quantity 30\n - iron_nugget [I4] quantity 1\n - iron_nugget [I5] quantity 1\n - iron_nugget [I6] quantity 1\n - iron_nugget [I8] quantity 1\n - iron_nugget [I9] quantity 1\n - iron_nugget [I10] quantity 1\n - iron_nugget [I11] quantity 1\n - lingering_potion [I24] quantity 1\n - polished_andesite_slab [I27] quantity 34\n - stick [I31] quantity 1\n - grass [I33] quantity 64"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I31] to [B1] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: lantern\ninventory:\n - torch [0] quantity 4\n - coal [A1] quantity 1\n - stick [B1] quantity 1\n - iron_nugget [I2] quantity 1\n - yellow_dye [I3] quantity 30\n - iron_nugget [I4] quantity 1\n - iron_nugget [I5] quantity 1\n - iron_nugget [I6] quantity 1\n - iron_nugget [I8] quantity 1\n - iron_nugget [I9] quantity 1\n - iron_nugget [I10] quantity 1\n - iron_nugget [I11] quantity 1\n - lingering_potion [I24] quantity 1\n - polished_andesite_slab [I27] quantity 34\n - grass [I33] quantity 64"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [0] to [I7] with quantity 4"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: lantern\ninventory:\n - iron_nugget [I2] quantity 1\n - yellow_dye [I3] quantity 30\n - iron_nugget [I4] quantity 1\n - iron_nugget [I5] quantity 1\n - iron_nugget [I6] quantity 1\n - torch [I7] quantity 4\n - iron_nugget [I8] quantity 1\n - iron_nugget [I9] quantity 1\n - iron_nugget [I10] quantity 1\n - iron_nugget [I11] quantity 1\n - lingering_potion [I24] quantity 1\n - polished_andesite_slab [I27] quantity 34\n - grass [I33] quantity 64"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I2] to [A1] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: lantern\ninventory:\n - iron_nugget [A1] quantity 1\n - yellow_dye [I3] quantity 30\n - iron_nugget [I4] quantity 1\n - iron_nugget [I5] quantity 1\n - iron_nugget [I6] quantity 1\n - torch [I7] quantity 4\n - iron_nugget [I8] quantity 1\n - iron_nugget [I9] quantity 1\n - iron_nugget [I10] quantity 1\n - iron_nugget [I11] quantity 1\n - lingering_potion [I24] quantity 1\n - polished_andesite_slab [I27] quantity 34\n - grass [I33] quantity 64"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I4] to [A2] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: lantern\ninventory:\n - iron_nugget [A1] quantity 1\n - iron_nugget [A2] quantity 1\n - yellow_dye [I3] quantity 30\n - iron_nugget [I5] quantity 1\n - iron_nugget [I6] quantity 1\n - torch [I7] quantity 4\n - iron_nugget [I8] quantity 1\n - iron_nugget [I9] quantity 1\n - iron_nugget [I10] quantity 1\n - iron_nugget [I11] quantity 1\n - lingering_potion [I24] quantity 1\n - polished_andesite_slab [I27] quantity 34\n - grass [I33] quantity 64"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I5] to [A3] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: lantern\ninventory:\n - iron_nugget [A1] quantity 1\n - iron_nugget [A2] quantity 1\n - iron_nugget [A3] quantity 1\n - yellow_dye [I3] quantity 30\n - iron_nugget [I6] quantity 1\n - torch [I7] quantity 4\n - iron_nugget [I8] quantity 1\n - iron_nugget [I9] quantity 1\n - iron_nugget [I10] quantity 1\n - iron_nugget [I11] quantity 1\n - lingering_potion [I24] quantity 1\n - polished_andesite_slab [I27] quantity 34\n - grass [I33] quantity 64"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I6] to [B1] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: lantern\ninventory:\n - iron_nugget [A1] quantity 1\n - iron_nugget [A2] quantity 1\n - iron_nugget [A3] quantity 1\n - iron_nugget [B1] quantity 1\n - yellow_dye [I3] quantity 30\n - torch [I7] quantity 4\n - iron_nugget [I8] quantity 1\n - iron_nugget [I9] quantity 1\n - iron_nugget [I10] quantity 1\n - iron_nugget [I11] quantity 1\n - lingering_potion [I24] quantity 1\n - polished_andesite_slab [I27] quantity 34\n - grass [I33] quantity 64"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I7] to [B2] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: lantern\ninventory:\n - iron_nugget [A1] quantity 1\n - iron_nugget [A2] quantity 1\n - iron_nugget [A3] quantity 1\n - iron_nugget [B1] quantity 1\n - torch [B2] quantity 1\n - yellow_dye [I3] quantity 30\n - torch [I7] quantity 3\n - iron_nugget [I8] quantity 1\n - iron_nugget [I9] quantity 1\n - iron_nugget [I10] quantity 1\n - iron_nugget [I11] quantity 1\n - lingering_potion [I24] quantity 1\n - polished_andesite_slab [I27] quantity 34\n - grass [I33] quantity 64"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I8] to [B3] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: lantern\ninventory:\n - iron_nugget [A1] quantity 1\n - iron_nugget [A2] quantity 1\n - iron_nugget [A3] quantity 1\n - iron_nugget [B1] quantity 1\n - torch [B2] quantity 1\n - iron_nugget [B3] quantity 1\n - yellow_dye [I3] quantity 30\n - torch [I7] quantity 3\n - iron_nugget [I9] quantity 1\n - iron_nugget [I10] quantity 1\n - iron_nugget [I11] quantity 1\n - lingering_potion [I24] quantity 1\n - polished_andesite_slab [I27] quantity 34\n - grass [I33] quantity 64"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I9] to [C1] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: lantern\ninventory:\n - iron_nugget [A1] quantity 1\n - iron_nugget [A2] quantity 1\n - iron_nugget [A3] quantity 1\n - iron_nugget [B1] quantity 1\n - torch [B2] quantity 1\n - iron_nugget [B3] quantity 1\n - iron_nugget [C1] quantity 1\n - yellow_dye [I3] quantity 30\n - torch [I7] quantity 3\n - iron_nugget [I10] quantity 1\n - iron_nugget [I11] quantity 1\n - lingering_potion [I24] quantity 1\n - polished_andesite_slab [I27] quantity 34\n - grass [I33] quantity 64"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I10] to [C2] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: lantern\ninventory:\n - iron_nugget [A1] quantity 1\n - iron_nugget [A2] quantity 1\n - iron_nugget [A3] quantity 1\n - iron_nugget [B1] quantity 1\n - torch [B2] quantity 1\n - iron_nugget [B3] quantity 1\n - iron_nugget [C1] quantity 1\n - iron_nugget [C2] quantity 1\n - yellow_dye [I3] quantity 30\n - torch [I7] quantity 3\n - iron_nugget [I11] quantity 1\n - lingering_potion [I24] quantity 1\n - polished_andesite_slab [I27] quantity 34\n - grass [I33] quantity 64"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I11] to [C3] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: lantern\ninventory:\n - lantern [0] quantity 1\n - iron_nugget [A1] quantity 1\n - iron_nugget [A2] quantity 1\n - iron_nugget [A3] quantity 1\n - iron_nugget [B1] quantity 1\n - torch [B2] quantity 1\n - iron_nugget [B3] quantity 1\n - iron_nugget [C1] quantity 1\n - iron_nugget [C2] quantity 1\n - iron_nugget [C3] quantity 1\n - yellow_dye [I3] quantity 30\n - torch [I7] quantity 3\n - lingering_potion [I24] quantity 1\n - polished_andesite_slab [I27] quantity 34\n - grass [I33] quantity 64"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [0] to [I2] with quantity 1"
+    }
+  ],
+  "example_id": "TRAIN0650"
+}

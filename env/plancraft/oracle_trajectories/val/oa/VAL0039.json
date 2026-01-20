@@ -1,0 +1,201 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are crafting in Minecraft. You need to decide on the next action.\n\nCrafting Grid: The crafting table is organized into a 3x3 grid. Each slot in the grid has a unique identifier:\n    - Top row: [A1] [A2] [A3]\n    - Middle row: [B1] [B2] [B3]\n    - Bottom row: [C1] [C2] [C3]\n\nThe output of the crafting process is placed in a designated output slot labeled [0] You cannot move or smelt items directly into slot [0]\n\nInventory Slots: The remaining inventory slots (outside of the crafting grid) are used for storing items. These slots are labeled as [I1] to [I36]\n\nActions:\n\t- move: Transfer a specific quantity of an item from one slot to another\n\t- smelt: Smelt an item in a furnace and moves the output to a specific slot\n\nFormat\n\t- `move: from [Source] to [Target] with quantity N`\n\t- `smelt: from [Source] to [Target] with quantity N`\n\nExample:\n    - `move: from [I2] to [A1] with quantity 3`\n    - `smelt: from [I5] to [I6] with quantity 1`\n\nConstraints:\n   - You cannot move or smelt items into [0]\n   - If an item is not in slot [0] then the recipe is incorrect\n   - You need to move items from [0] to a free inventory slot to complete the crafting process"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: magenta_stained_glass\ninventory:\n - rose_bush [I3] quantity 1\n - spruce_fence_gate [I4] quantity 47\n - oxeye_daisy [I6] quantity 55\n - enchanted_golden_apple [I7] quantity 14\n - gray_shulker_box [I8] quantity 1\n - vine [I9] quantity 55\n - sand [I13] quantity 8\n - stripped_birch_log [I18] quantity 57\n - acacia_planks [I20] quantity 38\n - cobblestone_stairs [I21] quantity 40\n - birch_planks [I23] quantity 13\n - yellow_stained_glass_pane [I26] quantity 30\n - blue_dye [I28] quantity 1\n - smoker [I29] quantity 2\n - green_shulker_box [I30] quantity 1\n - music_disc_chirp [I31] quantity 1\n - iron_door [I32] quantity 24\n - red_concrete_powder [I34] quantity 35\n - pink_dye [I35] quantity 1\n - villager_spawn_egg [I36] quantity 13"
+    },
+    {
+      "role": "assistant",
+      "content": "smelt: from [I13] to [I2] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: magenta_stained_glass\ninventory:\n - glass [I2] quantity 1\n - rose_bush [I3] quantity 1\n - spruce_fence_gate [I4] quantity 47\n - oxeye_daisy [I6] quantity 55\n - enchanted_golden_apple [I7] quantity 14\n - gray_shulker_box [I8] quantity 1\n - vine [I9] quantity 55\n - sand [I13] quantity 7\n - stripped_birch_log [I18] quantity 57\n - acacia_planks [I20] quantity 38\n - cobblestone_stairs [I21] quantity 40\n - birch_planks [I23] quantity 13\n - yellow_stained_glass_pane [I26] quantity 30\n - blue_dye [I28] quantity 1\n - smoker [I29] quantity 2\n - green_shulker_box [I30] quantity 1\n - music_disc_chirp [I31] quantity 1\n - iron_door [I32] quantity 24\n - red_concrete_powder [I34] quantity 35\n - pink_dye [I35] quantity 1\n - villager_spawn_egg [I36] quantity 13"
+    },
+    {
+      "role": "assistant",
+      "content": "smelt: from [I13] to [I5] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: magenta_stained_glass\ninventory:\n - glass [I2] quantity 1\n - rose_bush [I3] quantity 1\n - spruce_fence_gate [I4] quantity 47\n - glass [I5] quantity 1\n - oxeye_daisy [I6] quantity 55\n - enchanted_golden_apple [I7] quantity 14\n - gray_shulker_box [I8] quantity 1\n - vine [I9] quantity 55\n - sand [I13] quantity 6\n - stripped_birch_log [I18] quantity 57\n - acacia_planks [I20] quantity 38\n - cobblestone_stairs [I21] quantity 40\n - birch_planks [I23] quantity 13\n - yellow_stained_glass_pane [I26] quantity 30\n - blue_dye [I28] quantity 1\n - smoker [I29] quantity 2\n - green_shulker_box [I30] quantity 1\n - music_disc_chirp [I31] quantity 1\n - iron_door [I32] quantity 24\n - red_concrete_powder [I34] quantity 35\n - pink_dye [I35] quantity 1\n - villager_spawn_egg [I36] quantity 13"
+    },
+    {
+      "role": "assistant",
+      "content": "smelt: from [I13] to [I10] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: magenta_stained_glass\ninventory:\n - glass [I2] quantity 1\n - rose_bush [I3] quantity 1\n - spruce_fence_gate [I4] quantity 47\n - glass [I5] quantity 1\n - oxeye_daisy [I6] quantity 55\n - enchanted_golden_apple [I7] quantity 14\n - gray_shulker_box [I8] quantity 1\n - vine [I9] quantity 55\n - glass [I10] quantity 1\n - sand [I13] quantity 5\n - stripped_birch_log [I18] quantity 57\n - acacia_planks [I20] quantity 38\n - cobblestone_stairs [I21] quantity 40\n - birch_planks [I23] quantity 13\n - yellow_stained_glass_pane [I26] quantity 30\n - blue_dye [I28] quantity 1\n - smoker [I29] quantity 2\n - green_shulker_box [I30] quantity 1\n - music_disc_chirp [I31] quantity 1\n - iron_door [I32] quantity 24\n - red_concrete_powder [I34] quantity 35\n - pink_dye [I35] quantity 1\n - villager_spawn_egg [I36] quantity 13"
+    },
+    {
+      "role": "assistant",
+      "content": "smelt: from [I13] to [I11] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: magenta_stained_glass\ninventory:\n - glass [I2] quantity 1\n - rose_bush [I3] quantity 1\n - spruce_fence_gate [I4] quantity 47\n - glass [I5] quantity 1\n - oxeye_daisy [I6] quantity 55\n - enchanted_golden_apple [I7] quantity 14\n - gray_shulker_box [I8] quantity 1\n - vine [I9] quantity 55\n - glass [I10] quantity 1\n - glass [I11] quantity 1\n - sand [I13] quantity 4\n - stripped_birch_log [I18] quantity 57\n - acacia_planks [I20] quantity 38\n - cobblestone_stairs [I21] quantity 40\n - birch_planks [I23] quantity 13\n - yellow_stained_glass_pane [I26] quantity 30\n - blue_dye [I28] quantity 1\n - smoker [I29] quantity 2\n - green_shulker_box [I30] quantity 1\n - music_disc_chirp [I31] quantity 1\n - iron_door [I32] quantity 24\n - red_concrete_powder [I34] quantity 35\n - pink_dye [I35] quantity 1\n - villager_spawn_egg [I36] quantity 13"
+    },
+    {
+      "role": "assistant",
+      "content": "smelt: from [I13] to [I12] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: magenta_stained_glass\ninventory:\n - glass [I2] quantity 1\n - rose_bush [I3] quantity 1\n - spruce_fence_gate [I4] quantity 47\n - glass [I5] quantity 1\n - oxeye_daisy [I6] quantity 55\n - enchanted_golden_apple [I7] quantity 14\n - gray_shulker_box [I8] quantity 1\n - vine [I9] quantity 55\n - glass [I10] quantity 1\n - glass [I11] quantity 1\n - glass [I12] quantity 1\n - sand [I13] quantity 3\n - stripped_birch_log [I18] quantity 57\n - acacia_planks [I20] quantity 38\n - cobblestone_stairs [I21] quantity 40\n - birch_planks [I23] quantity 13\n - yellow_stained_glass_pane [I26] quantity 30\n - blue_dye [I28] quantity 1\n - smoker [I29] quantity 2\n - green_shulker_box [I30] quantity 1\n - music_disc_chirp [I31] quantity 1\n - iron_door [I32] quantity 24\n - red_concrete_powder [I34] quantity 35\n - pink_dye [I35] quantity 1\n - villager_spawn_egg [I36] quantity 13"
+    },
+    {
+      "role": "assistant",
+      "content": "smelt: from [I13] to [I14] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: magenta_stained_glass\ninventory:\n - glass [I2] quantity 1\n - rose_bush [I3] quantity 1\n - spruce_fence_gate [I4] quantity 47\n - glass [I5] quantity 1\n - oxeye_daisy [I6] quantity 55\n - enchanted_golden_apple [I7] quantity 14\n - gray_shulker_box [I8] quantity 1\n - vine [I9] quantity 55\n - glass [I10] quantity 1\n - glass [I11] quantity 1\n - glass [I12] quantity 1\n - sand [I13] quantity 2\n - glass [I14] quantity 1\n - stripped_birch_log [I18] quantity 57\n - acacia_planks [I20] quantity 38\n - cobblestone_stairs [I21] quantity 40\n - birch_planks [I23] quantity 13\n - yellow_stained_glass_pane [I26] quantity 30\n - blue_dye [I28] quantity 1\n - smoker [I29] quantity 2\n - green_shulker_box [I30] quantity 1\n - music_disc_chirp [I31] quantity 1\n - iron_door [I32] quantity 24\n - red_concrete_powder [I34] quantity 35\n - pink_dye [I35] quantity 1\n - villager_spawn_egg [I36] quantity 13"
+    },
+    {
+      "role": "assistant",
+      "content": "smelt: from [I13] to [I15] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: magenta_stained_glass\ninventory:\n - glass [I2] quantity 1\n - rose_bush [I3] quantity 1\n - spruce_fence_gate [I4] quantity 47\n - glass [I5] quantity 1\n - oxeye_daisy [I6] quantity 55\n - enchanted_golden_apple [I7] quantity 14\n - gray_shulker_box [I8] quantity 1\n - vine [I9] quantity 55\n - glass [I10] quantity 1\n - glass [I11] quantity 1\n - glass [I12] quantity 1\n - sand [I13] quantity 1\n - glass [I14] quantity 1\n - glass [I15] quantity 1\n - stripped_birch_log [I18] quantity 57\n - acacia_planks [I20] quantity 38\n - cobblestone_stairs [I21] quantity 40\n - birch_planks [I23] quantity 13\n - yellow_stained_glass_pane [I26] quantity 30\n - blue_dye [I28] quantity 1\n - smoker [I29] quantity 2\n - green_shulker_box [I30] quantity 1\n - music_disc_chirp [I31] quantity 1\n - iron_door [I32] quantity 24\n - red_concrete_powder [I34] quantity 35\n - pink_dye [I35] quantity 1\n - villager_spawn_egg [I36] quantity 13"
+    },
+    {
+      "role": "assistant",
+      "content": "smelt: from [I13] to [I16] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: magenta_stained_glass\ninventory:\n - glass [I2] quantity 1\n - rose_bush [I3] quantity 1\n - spruce_fence_gate [I4] quantity 47\n - glass [I5] quantity 1\n - oxeye_daisy [I6] quantity 55\n - enchanted_golden_apple [I7] quantity 14\n - gray_shulker_box [I8] quantity 1\n - vine [I9] quantity 55\n - glass [I10] quantity 1\n - glass [I11] quantity 1\n - glass [I12] quantity 1\n - glass [I14] quantity 1\n - glass [I15] quantity 1\n - glass [I16] quantity 1\n - stripped_birch_log [I18] quantity 57\n - acacia_planks [I20] quantity 38\n - cobblestone_stairs [I21] quantity 40\n - birch_planks [I23] quantity 13\n - yellow_stained_glass_pane [I26] quantity 30\n - blue_dye [I28] quantity 1\n - smoker [I29] quantity 2\n - green_shulker_box [I30] quantity 1\n - music_disc_chirp [I31] quantity 1\n - iron_door [I32] quantity 24\n - red_concrete_powder [I34] quantity 35\n - pink_dye [I35] quantity 1\n - villager_spawn_egg [I36] quantity 13"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I3] to [A1] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: magenta_stained_glass\ninventory:\n - red_dye [0] quantity 2\n - rose_bush [A1] quantity 1\n - glass [I2] quantity 1\n - spruce_fence_gate [I4] quantity 47\n - glass [I5] quantity 1\n - oxeye_daisy [I6] quantity 55\n - enchanted_golden_apple [I7] quantity 14\n - gray_shulker_box [I8] quantity 1\n - vine [I9] quantity 55\n - glass [I10] quantity 1\n - glass [I11] quantity 1\n - glass [I12] quantity 1\n - glass [I14] quantity 1\n - glass [I15] quantity 1\n - glass [I16] quantity 1\n - stripped_birch_log [I18] quantity 57\n - acacia_planks [I20] quantity 38\n - cobblestone_stairs [I21] quantity 40\n - birch_planks [I23] quantity 13\n - yellow_stained_glass_pane [I26] quantity 30\n - blue_dye [I28] quantity 1\n - smoker [I29] quantity 2\n - green_shulker_box [I30] quantity 1\n - music_disc_chirp [I31] quantity 1\n - iron_door [I32] quantity 24\n - red_concrete_powder [I34] quantity 35\n - pink_dye [I35] quantity 1\n - villager_spawn_egg [I36] quantity 13"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [0] to [I3] with quantity 2"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: magenta_stained_glass\ninventory:\n - glass [I2] quantity 1\n - red_dye [I3] quantity 2\n - spruce_fence_gate [I4] quantity 47\n - glass [I5] quantity 1\n - oxeye_daisy [I6] quantity 55\n - enchanted_golden_apple [I7] quantity 14\n - gray_shulker_box [I8] quantity 1\n - vine [I9] quantity 55\n - glass [I10] quantity 1\n - glass [I11] quantity 1\n - glass [I12] quantity 1\n - glass [I14] quantity 1\n - glass [I15] quantity 1\n - glass [I16] quantity 1\n - stripped_birch_log [I18] quantity 57\n - acacia_planks [I20] quantity 38\n - cobblestone_stairs [I21] quantity 40\n - birch_planks [I23] quantity 13\n - yellow_stained_glass_pane [I26] quantity 30\n - blue_dye [I28] quantity 1\n - smoker [I29] quantity 2\n - green_shulker_box [I30] quantity 1\n - music_disc_chirp [I31] quantity 1\n - iron_door [I32] quantity 24\n - red_concrete_powder [I34] quantity 35\n - pink_dye [I35] quantity 1\n - villager_spawn_egg [I36] quantity 13"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I3] to [A1] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: magenta_stained_glass\ninventory:\n - red_dye [A1] quantity 1\n - glass [I2] quantity 1\n - red_dye [I3] quantity 1\n - spruce_fence_gate [I4] quantity 47\n - glass [I5] quantity 1\n - oxeye_daisy [I6] quantity 55\n - enchanted_golden_apple [I7] quantity 14\n - gray_shulker_box [I8] quantity 1\n - vine [I9] quantity 55\n - glass [I10] quantity 1\n - glass [I11] quantity 1\n - glass [I12] quantity 1\n - glass [I14] quantity 1\n - glass [I15] quantity 1\n - glass [I16] quantity 1\n - stripped_birch_log [I18] quantity 57\n - acacia_planks [I20] quantity 38\n - cobblestone_stairs [I21] quantity 40\n - birch_planks [I23] quantity 13\n - yellow_stained_glass_pane [I26] quantity 30\n - blue_dye [I28] quantity 1\n - smoker [I29] quantity 2\n - green_shulker_box [I30] quantity 1\n - music_disc_chirp [I31] quantity 1\n - iron_door [I32] quantity 24\n - red_concrete_powder [I34] quantity 35\n - pink_dye [I35] quantity 1\n - villager_spawn_egg [I36] quantity 13"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I28] to [A2] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: magenta_stained_glass\ninventory:\n - purple_dye [0] quantity 2\n - red_dye [A1] quantity 1\n - blue_dye [A2] quantity 1\n - glass [I2] quantity 1\n - red_dye [I3] quantity 1\n - spruce_fence_gate [I4] quantity 47\n - glass [I5] quantity 1\n - oxeye_daisy [I6] quantity 55\n - enchanted_golden_apple [I7] quantity 14\n - gray_shulker_box [I8] quantity 1\n - vine [I9] quantity 55\n - glass [I10] quantity 1\n - glass [I11] quantity 1\n - glass [I12] quantity 1\n - glass [I14] quantity 1\n - glass [I15] quantity 1\n - glass [I16] quantity 1\n - stripped_birch_log [I18] quantity 57\n - acacia_planks [I20] quantity 38\n - cobblestone_stairs [I21] quantity 40\n - birch_planks [I23] quantity 13\n - yellow_stained_glass_pane [I26] quantity 30\n - smoker [I29] quantity 2\n - green_shulker_box [I30] quantity 1\n - music_disc_chirp [I31] quantity 1\n - iron_door [I32] quantity 24\n - red_concrete_powder [I34] quantity 35\n - pink_dye [I35] quantity 1\n - villager_spawn_egg [I36] quantity 13"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I35] to [A3] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: magenta_stained_glass\ninventory:\n - magenta_dye [0] quantity 3\n - red_dye [A1] quantity 1\n - blue_dye [A2] quantity 1\n - pink_dye [A3] quantity 1\n - glass [I2] quantity 1\n - red_dye [I3] quantity 1\n - spruce_fence_gate [I4] quantity 47\n - glass [I5] quantity 1\n - oxeye_daisy [I6] quantity 55\n - enchanted_golden_apple [I7] quantity 14\n - gray_shulker_box [I8] quantity 1\n - vine [I9] quantity 55\n - glass [I10] quantity 1\n - glass [I11] quantity 1\n - glass [I12] quantity 1\n - glass [I14] quantity 1\n - glass [I15] quantity 1\n - glass [I16] quantity 1\n - stripped_birch_log [I18] quantity 57\n - acacia_planks [I20] quantity 38\n - cobblestone_stairs [I21] quantity 40\n - birch_planks [I23] quantity 13\n - yellow_stained_glass_pane [I26] quantity 30\n - smoker [I29] quantity 2\n - green_shulker_box [I30] quantity 1\n - music_disc_chirp [I31] quantity 1\n - iron_door [I32] quantity 24\n - red_concrete_powder [I34] quantity 35\n - villager_spawn_egg [I36] quantity 13"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [0] to [I13] with quantity 3"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: magenta_stained_glass\ninventory:\n - glass [I2] quantity 1\n - red_dye [I3] quantity 1\n - spruce_fence_gate [I4] quantity 47\n - glass [I5] quantity 1\n - oxeye_daisy [I6] quantity 55\n - enchanted_golden_apple [I7] quantity 14\n - gray_shulker_box [I8] quantity 1\n - vine [I9] quantity 55\n - glass [I10] quantity 1\n - glass [I11] quantity 1\n - glass [I12] quantity 1\n - magenta_dye [I13] quantity 3\n - glass [I14] quantity 1\n - glass [I15] quantity 1\n - glass [I16] quantity 1\n - stripped_birch_log [I18] quantity 57\n - acacia_planks [I20] quantity 38\n - cobblestone_stairs [I21] quantity 40\n - birch_planks [I23] quantity 13\n - yellow_stained_glass_pane [I26] quantity 30\n - smoker [I29] quantity 2\n - green_shulker_box [I30] quantity 1\n - music_disc_chirp [I31] quantity 1\n - iron_door [I32] quantity 24\n - red_concrete_powder [I34] quantity 35\n - villager_spawn_egg [I36] quantity 13"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I2] to [A1] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: magenta_stained_glass\ninventory:\n - glass [A1] quantity 1\n - red_dye [I3] quantity 1\n - spruce_fence_gate [I4] quantity 47\n - glass [I5] quantity 1\n - oxeye_daisy [I6] quantity 55\n - enchanted_golden_apple [I7] quantity 14\n - gray_shulker_box [I8] quantity 1\n - vine [I9] quantity 55\n - glass [I10] quantity 1\n - glass [I11] quantity 1\n - glass [I12] quantity 1\n - magenta_dye [I13] quantity 3\n - glass [I14] quantity 1\n - glass [I15] quantity 1\n - glass [I16] quantity 1\n - stripped_birch_log [I18] quantity 57\n - acacia_planks [I20] quantity 38\n - cobblestone_stairs [I21] quantity 40\n - birch_planks [I23] quantity 13\n - yellow_stained_glass_pane [I26] quantity 30\n - smoker [I29] quantity 2\n - green_shulker_box [I30] quantity 1\n - music_disc_chirp [I31] quantity 1\n - iron_door [I32] quantity 24\n - red_concrete_powder [I34] quantity 35\n - villager_spawn_egg [I36] quantity 13"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I5] to [A2] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: magenta_stained_glass\ninventory:\n - glass [A1] quantity 1\n - glass [A2] quantity 1\n - red_dye [I3] quantity 1\n - spruce_fence_gate [I4] quantity 47\n - oxeye_daisy [I6] quantity 55\n - enchanted_golden_apple [I7] quantity 14\n - gray_shulker_box [I8] quantity 1\n - vine [I9] quantity 55\n - glass [I10] quantity 1\n - glass [I11] quantity 1\n - glass [I12] quantity 1\n - magenta_dye [I13] quantity 3\n - glass [I14] quantity 1\n - glass [I15] quantity 1\n - glass [I16] quantity 1\n - stripped_birch_log [I18] quantity 57\n - acacia_planks [I20] quantity 38\n - cobblestone_stairs [I21] quantity 40\n - birch_planks [I23] quantity 13\n - yellow_stained_glass_pane [I26] quantity 30\n - smoker [I29] quantity 2\n - green_shulker_box [I30] quantity 1\n - music_disc_chirp [I31] quantity 1\n - iron_door [I32] quantity 24\n - red_concrete_powder [I34] quantity 35\n - villager_spawn_egg [I36] quantity 13"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I10] to [A3] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: magenta_stained_glass\ninventory:\n - glass [A1] quantity 1\n - glass [A2] quantity 1\n - glass [A3] quantity 1\n - red_dye [I3] quantity 1\n - spruce_fence_gate [I4] quantity 47\n - oxeye_daisy [I6] quantity 55\n - enchanted_golden_apple [I7] quantity 14\n - gray_shulker_box [I8] quantity 1\n - vine [I9] quantity 55\n - glass [I11] quantity 1\n - glass [I12] quantity 1\n - magenta_dye [I13] quantity 3\n - glass [I14] quantity 1\n - glass [I15] quantity 1\n - glass [I16] quantity 1\n - stripped_birch_log [I18] quantity 57\n - acacia_planks [I20] quantity 38\n - cobblestone_stairs [I21] quantity 40\n - birch_planks [I23] quantity 13\n - yellow_stained_glass_pane [I26] quantity 30\n - smoker [I29] quantity 2\n - green_shulker_box [I30] quantity 1\n - music_disc_chirp [I31] quantity 1\n - iron_door [I32] quantity 24\n - red_concrete_powder [I34] quantity 35\n - villager_spawn_egg [I36] quantity 13"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I11] to [B1] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: magenta_stained_glass\ninventory:\n - glass [A1] quantity 1\n - glass [A2] quantity 1\n - glass [A3] quantity 1\n - glass [B1] quantity 1\n - red_dye [I3] quantity 1\n - spruce_fence_gate [I4] quantity 47\n - oxeye_daisy [I6] quantity 55\n - enchanted_golden_apple [I7] quantity 14\n - gray_shulker_box [I8] quantity 1\n - vine [I9] quantity 55\n - glass [I12] quantity 1\n - magenta_dye [I13] quantity 3\n - glass [I14] quantity 1\n - glass [I15] quantity 1\n - glass [I16] quantity 1\n - stripped_birch_log [I18] quantity 57\n - acacia_planks [I20] quantity 38\n - cobblestone_stairs [I21] quantity 40\n - birch_planks [I23] quantity 13\n - yellow_stained_glass_pane [I26] quantity 30\n - smoker [I29] quantity 2\n - green_shulker_box [I30] quantity 1\n - music_disc_chirp [I31] quantity 1\n - iron_door [I32] quantity 24\n - red_concrete_powder [I34] quantity 35\n - villager_spawn_egg [I36] quantity 13"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I13] to [B2] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: magenta_stained_glass\ninventory:\n - glass [A1] quantity 1\n - glass [A2] quantity 1\n - glass [A3] quantity 1\n - glass [B1] quantity 1\n - magenta_dye [B2] quantity 1\n - red_dye [I3] quantity 1\n - spruce_fence_gate [I4] quantity 47\n - oxeye_daisy [I6] quantity 55\n - enchanted_golden_apple [I7] quantity 14\n - gray_shulker_box [I8] quantity 1\n - vine [I9] quantity 55\n - glass [I12] quantity 1\n - magenta_dye [I13] quantity 2\n - glass [I14] quantity 1\n - glass [I15] quantity 1\n - glass [I16] quantity 1\n - stripped_birch_log [I18] quantity 57\n - acacia_planks [I20] quantity 38\n - cobblestone_stairs [I21] quantity 40\n - birch_planks [I23] quantity 13\n - yellow_stained_glass_pane [I26] quantity 30\n - smoker [I29] quantity 2\n - green_shulker_box [I30] quantity 1\n - music_disc_chirp [I31] quantity 1\n - iron_door [I32] quantity 24\n - red_concrete_powder [I34] quantity 35\n - villager_spawn_egg [I36] quantity 13"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I12] to [B3] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: magenta_stained_glass\ninventory:\n - glass [A1] quantity 1\n - glass [A2] quantity 1\n - glass [A3] quantity 1\n - glass [B1] quantity 1\n - magenta_dye [B2] quantity 1\n - glass [B3] quantity 1\n - red_dye [I3] quantity 1\n - spruce_fence_gate [I4] quantity 47\n - oxeye_daisy [I6] quantity 55\n - enchanted_golden_apple [I7] quantity 14\n - gray_shulker_box [I8] quantity 1\n - vine [I9] quantity 55\n - magenta_dye [I13] quantity 2\n - glass [I14] quantity 1\n - glass [I15] quantity 1\n - glass [I16] quantity 1\n - stripped_birch_log [I18] quantity 57\n - acacia_planks [I20] quantity 38\n - cobblestone_stairs [I21] quantity 40\n - birch_planks [I23] quantity 13\n - yellow_stained_glass_pane [I26] quantity 30\n - smoker [I29] quantity 2\n - green_shulker_box [I30] quantity 1\n - music_disc_chirp [I31] quantity 1\n - iron_door [I32] quantity 24\n - red_concrete_powder [I34] quantity 35\n - villager_spawn_egg [I36] quantity 13"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I14] to [C1] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: magenta_stained_glass\ninventory:\n - glass [A1] quantity 1\n - glass [A2] quantity 1\n - glass [A3] quantity 1\n - glass [B1] quantity 1\n - magenta_dye [B2] quantity 1\n - glass [B3] quantity 1\n - glass [C1] quantity 1\n - red_dye [I3] quantity 1\n - spruce_fence_gate [I4] quantity 47\n - oxeye_daisy [I6] quantity 55\n - enchanted_golden_apple [I7] quantity 14\n - gray_shulker_box [I8] quantity 1\n - vine [I9] quantity 55\n - magenta_dye [I13] quantity 2\n - glass [I15] quantity 1\n - glass [I16] quantity 1\n - stripped_birch_log [I18] quantity 57\n - acacia_planks [I20] quantity 38\n - cobblestone_stairs [I21] quantity 40\n - birch_planks [I23] quantity 13\n - yellow_stained_glass_pane [I26] quantity 30\n - smoker [I29] quantity 2\n - green_shulker_box [I30] quantity 1\n - music_disc_chirp [I31] quantity 1\n - iron_door [I32] quantity 24\n - red_concrete_powder [I34] quantity 35\n - villager_spawn_egg [I36] quantity 13"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I15] to [C2] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: magenta_stained_glass\ninventory:\n - glass [A1] quantity 1\n - glass [A2] quantity 1\n - glass [A3] quantity 1\n - glass [B1] quantity 1\n - magenta_dye [B2] quantity 1\n - glass [B3] quantity 1\n - glass [C1] quantity 1\n - glass [C2] quantity 1\n - red_dye [I3] quantity 1\n - spruce_fence_gate [I4] quantity 47\n - oxeye_daisy [I6] quantity 55\n - enchanted_golden_apple [I7] quantity 14\n - gray_shulker_box [I8] quantity 1\n - vine [I9] quantity 55\n - magenta_dye [I13] quantity 2\n - glass [I16] quantity 1\n - stripped_birch_log [I18] quantity 57\n - acacia_planks [I20] quantity 38\n - cobblestone_stairs [I21] quantity 40\n - birch_planks [I23] quantity 13\n - yellow_stained_glass_pane [I26] quantity 30\n - smoker [I29] quantity 2\n - green_shulker_box [I30] quantity 1\n - music_disc_chirp [I31] quantity 1\n - iron_door [I32] quantity 24\n - red_concrete_powder [I34] quantity 35\n - villager_spawn_egg [I36] quantity 13"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I16] to [C3] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: magenta_stained_glass\ninventory:\n - magenta_stained_glass [0] quantity 8\n - glass [A1] quantity 1\n - glass [A2] quantity 1\n - glass [A3] quantity 1\n - glass [B1] quantity 1\n - magenta_dye [B2] quantity 1\n - glass [B3] quantity 1\n - glass [C1] quantity 1\n - glass [C2] quantity 1\n - glass [C3] quantity 1\n - red_dye [I3] quantity 1\n - spruce_fence_gate [I4] quantity 47\n - oxeye_daisy [I6] quantity 55\n - enchanted_golden_apple [I7] quantity 14\n - gray_shulker_box [I8] quantity 1\n - vine [I9] quantity 55\n - magenta_dye [I13] quantity 2\n - stripped_birch_log [I18] quantity 57\n - acacia_planks [I20] quantity 38\n - cobblestone_stairs [I21] quantity 40\n - birch_planks [I23] quantity 13\n - yellow_stained_glass_pane [I26] quantity 30\n - smoker [I29] quantity 2\n - green_shulker_box [I30] quantity 1\n - music_disc_chirp [I31] quantity 1\n - iron_door [I32] quantity 24\n - red_concrete_powder [I34] quantity 35\n - villager_spawn_egg [I36] quantity 13"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [0] to [I2] with quantity 8"
+    }
+  ],
+  "example_id": "VAL0039"
+}

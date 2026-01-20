@@ -1,0 +1,153 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are crafting in Minecraft. You need to decide on the next action.\n\nCrafting Grid: The crafting table is organized into a 3x3 grid. Each slot in the grid has a unique identifier:\n    - Top row: [A1] [A2] [A3]\n    - Middle row: [B1] [B2] [B3]\n    - Bottom row: [C1] [C2] [C3]\n\nThe output of the crafting process is placed in a designated output slot labeled [0] You cannot move or smelt items directly into slot [0]\n\nInventory Slots: The remaining inventory slots (outside of the crafting grid) are used for storing items. These slots are labeled as [I1] to [I36]\n\nActions:\n\t- move: Transfer a specific quantity of an item from one slot to another\n\t- smelt: Smelt an item in a furnace and moves the output to a specific slot\n\nFormat\n\t- `move: from [Source] to [Target] with quantity N`\n\t- `smelt: from [Source] to [Target] with quantity N`\n\nExample:\n    - `move: from [I2] to [A1] with quantity 3`\n    - `smelt: from [I5] to [I6] with quantity 1`\n\nConstraints:\n   - You cannot move or smelt items into [0]\n   - If an item is not in slot [0] then the recipe is incorrect\n   - You need to move items from [0] to a free inventory slot to complete the crafting process"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: crossbow\ninventory:\n - orange_bed [I1] quantity 1\n - cave_spider_spawn_egg [I3] quantity 43\n - vex_spawn_egg [I4] quantity 45\n - tnt [I5] quantity 11\n - green_banner [I6] quantity 5\n - diamond_horse_armor [I7] quantity 1\n - white_tulip [I9] quantity 1\n - stick [I10] quantity 3\n - iron_nugget [I13] quantity 9\n - crafting_table [I15] quantity 25\n - string [I16] quantity 2\n - brewing_stand [I18] quantity 54\n - spruce_trapdoor [I19] quantity 52\n - knowledge_book [I20] quantity 1\n - baked_potato [I21] quantity 21\n - acacia_pressure_plate [I22] quantity 13\n - tripwire_hook [I25] quantity 1\n - magma_block [I26] quantity 30\n - dragon_head [I28] quantity 37\n - coal_ore [I36] quantity 9"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I13] to [A1] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: crossbow\ninventory:\n - iron_nugget [A1] quantity 1\n - orange_bed [I1] quantity 1\n - cave_spider_spawn_egg [I3] quantity 43\n - vex_spawn_egg [I4] quantity 45\n - tnt [I5] quantity 11\n - green_banner [I6] quantity 5\n - diamond_horse_armor [I7] quantity 1\n - white_tulip [I9] quantity 1\n - stick [I10] quantity 3\n - iron_nugget [I13] quantity 8\n - crafting_table [I15] quantity 25\n - string [I16] quantity 2\n - brewing_stand [I18] quantity 54\n - spruce_trapdoor [I19] quantity 52\n - knowledge_book [I20] quantity 1\n - baked_potato [I21] quantity 21\n - acacia_pressure_plate [I22] quantity 13\n - tripwire_hook [I25] quantity 1\n - magma_block [I26] quantity 30\n - dragon_head [I28] quantity 37\n - coal_ore [I36] quantity 9"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I13] to [A2] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: crossbow\ninventory:\n - iron_nugget [A1] quantity 1\n - iron_nugget [A2] quantity 1\n - orange_bed [I1] quantity 1\n - cave_spider_spawn_egg [I3] quantity 43\n - vex_spawn_egg [I4] quantity 45\n - tnt [I5] quantity 11\n - green_banner [I6] quantity 5\n - diamond_horse_armor [I7] quantity 1\n - white_tulip [I9] quantity 1\n - stick [I10] quantity 3\n - iron_nugget [I13] quantity 7\n - crafting_table [I15] quantity 25\n - string [I16] quantity 2\n - brewing_stand [I18] quantity 54\n - spruce_trapdoor [I19] quantity 52\n - knowledge_book [I20] quantity 1\n - baked_potato [I21] quantity 21\n - acacia_pressure_plate [I22] quantity 13\n - tripwire_hook [I25] quantity 1\n - magma_block [I26] quantity 30\n - dragon_head [I28] quantity 37\n - coal_ore [I36] quantity 9"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I13] to [A3] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: crossbow\ninventory:\n - iron_nugget [A1] quantity 1\n - iron_nugget [A2] quantity 1\n - iron_nugget [A3] quantity 1\n - orange_bed [I1] quantity 1\n - cave_spider_spawn_egg [I3] quantity 43\n - vex_spawn_egg [I4] quantity 45\n - tnt [I5] quantity 11\n - green_banner [I6] quantity 5\n - diamond_horse_armor [I7] quantity 1\n - white_tulip [I9] quantity 1\n - stick [I10] quantity 3\n - iron_nugget [I13] quantity 6\n - crafting_table [I15] quantity 25\n - string [I16] quantity 2\n - brewing_stand [I18] quantity 54\n - spruce_trapdoor [I19] quantity 52\n - knowledge_book [I20] quantity 1\n - baked_potato [I21] quantity 21\n - acacia_pressure_plate [I22] quantity 13\n - tripwire_hook [I25] quantity 1\n - magma_block [I26] quantity 30\n - dragon_head [I28] quantity 37\n - coal_ore [I36] quantity 9"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I13] to [B1] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: crossbow\ninventory:\n - iron_nugget [A1] quantity 1\n - iron_nugget [A2] quantity 1\n - iron_nugget [A3] quantity 1\n - iron_nugget [B1] quantity 1\n - orange_bed [I1] quantity 1\n - cave_spider_spawn_egg [I3] quantity 43\n - vex_spawn_egg [I4] quantity 45\n - tnt [I5] quantity 11\n - green_banner [I6] quantity 5\n - diamond_horse_armor [I7] quantity 1\n - white_tulip [I9] quantity 1\n - stick [I10] quantity 3\n - iron_nugget [I13] quantity 5\n - crafting_table [I15] quantity 25\n - string [I16] quantity 2\n - brewing_stand [I18] quantity 54\n - spruce_trapdoor [I19] quantity 52\n - knowledge_book [I20] quantity 1\n - baked_potato [I21] quantity 21\n - acacia_pressure_plate [I22] quantity 13\n - tripwire_hook [I25] quantity 1\n - magma_block [I26] quantity 30\n - dragon_head [I28] quantity 37\n - coal_ore [I36] quantity 9"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I13] to [B2] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: crossbow\ninventory:\n - iron_nugget [A1] quantity 1\n - iron_nugget [A2] quantity 1\n - iron_nugget [A3] quantity 1\n - iron_nugget [B1] quantity 1\n - iron_nugget [B2] quantity 1\n - orange_bed [I1] quantity 1\n - cave_spider_spawn_egg [I3] quantity 43\n - vex_spawn_egg [I4] quantity 45\n - tnt [I5] quantity 11\n - green_banner [I6] quantity 5\n - diamond_horse_armor [I7] quantity 1\n - white_tulip [I9] quantity 1\n - stick [I10] quantity 3\n - iron_nugget [I13] quantity 4\n - crafting_table [I15] quantity 25\n - string [I16] quantity 2\n - brewing_stand [I18] quantity 54\n - spruce_trapdoor [I19] quantity 52\n - knowledge_book [I20] quantity 1\n - baked_potato [I21] quantity 21\n - acacia_pressure_plate [I22] quantity 13\n - tripwire_hook [I25] quantity 1\n - magma_block [I26] quantity 30\n - dragon_head [I28] quantity 37\n - coal_ore [I36] quantity 9"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I13] to [B3] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: crossbow\ninventory:\n - iron_nugget [A1] quantity 1\n - iron_nugget [A2] quantity 1\n - iron_nugget [A3] quantity 1\n - iron_nugget [B1] quantity 1\n - iron_nugget [B2] quantity 1\n - iron_nugget [B3] quantity 1\n - orange_bed [I1] quantity 1\n - cave_spider_spawn_egg [I3] quantity 43\n - vex_spawn_egg [I4] quantity 45\n - tnt [I5] quantity 11\n - green_banner [I6] quantity 5\n - diamond_horse_armor [I7] quantity 1\n - white_tulip [I9] quantity 1\n - stick [I10] quantity 3\n - iron_nugget [I13] quantity 3\n - crafting_table [I15] quantity 25\n - string [I16] quantity 2\n - brewing_stand [I18] quantity 54\n - spruce_trapdoor [I19] quantity 52\n - knowledge_book [I20] quantity 1\n - baked_potato [I21] quantity 21\n - acacia_pressure_plate [I22] quantity 13\n - tripwire_hook [I25] quantity 1\n - magma_block [I26] quantity 30\n - dragon_head [I28] quantity 37\n - coal_ore [I36] quantity 9"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I13] to [C1] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: crossbow\ninventory:\n - iron_nugget [A1] quantity 1\n - iron_nugget [A2] quantity 1\n - iron_nugget [A3] quantity 1\n - iron_nugget [B1] quantity 1\n - iron_nugget [B2] quantity 1\n - iron_nugget [B3] quantity 1\n - iron_nugget [C1] quantity 1\n - orange_bed [I1] quantity 1\n - cave_spider_spawn_egg [I3] quantity 43\n - vex_spawn_egg [I4] quantity 45\n - tnt [I5] quantity 11\n - green_banner [I6] quantity 5\n - diamond_horse_armor [I7] quantity 1\n - white_tulip [I9] quantity 1\n - stick [I10] quantity 3\n - iron_nugget [I13] quantity 2\n - crafting_table [I15] quantity 25\n - string [I16] quantity 2\n - brewing_stand [I18] quantity 54\n - spruce_trapdoor [I19] quantity 52\n - knowledge_book [I20] quantity 1\n - baked_potato [I21] quantity 21\n - acacia_pressure_plate [I22] quantity 13\n - tripwire_hook [I25] quantity 1\n - magma_block [I26] quantity 30\n - dragon_head [I28] quantity 37\n - coal_ore [I36] quantity 9"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I13] to [C2] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: crossbow\ninventory:\n - iron_nugget [A1] quantity 1\n - iron_nugget [A2] quantity 1\n - iron_nugget [A3] quantity 1\n - iron_nugget [B1] quantity 1\n - iron_nugget [B2] quantity 1\n - iron_nugget [B3] quantity 1\n - iron_nugget [C1] quantity 1\n - iron_nugget [C2] quantity 1\n - orange_bed [I1] quantity 1\n - cave_spider_spawn_egg [I3] quantity 43\n - vex_spawn_egg [I4] quantity 45\n - tnt [I5] quantity 11\n - green_banner [I6] quantity 5\n - diamond_horse_armor [I7] quantity 1\n - white_tulip [I9] quantity 1\n - stick [I10] quantity 3\n - iron_nugget [I13] quantity 1\n - crafting_table [I15] quantity 25\n - string [I16] quantity 2\n - brewing_stand [I18] quantity 54\n - spruce_trapdoor [I19] quantity 52\n - knowledge_book [I20] quantity 1\n - baked_potato [I21] quantity 21\n - acacia_pressure_plate [I22] quantity 13\n - tripwire_hook [I25] quantity 1\n - magma_block [I26] quantity 30\n - dragon_head [I28] quantity 37\n - coal_ore [I36] quantity 9"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I13] to [C3] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: crossbow\ninventory:\n - iron_ingot [0] quantity 1\n - iron_nugget [A1] quantity 1\n - iron_nugget [A2] quantity 1\n - iron_nugget [A3] quantity 1\n - iron_nugget [B1] quantity 1\n - iron_nugget [B2] quantity 1\n - iron_nugget [B3] quantity 1\n - iron_nugget [C1] quantity 1\n - iron_nugget [C2] quantity 1\n - iron_nugget [C3] quantity 1\n - orange_bed [I1] quantity 1\n - cave_spider_spawn_egg [I3] quantity 43\n - vex_spawn_egg [I4] quantity 45\n - tnt [I5] quantity 11\n - green_banner [I6] quantity 5\n - diamond_horse_armor [I7] quantity 1\n - white_tulip [I9] quantity 1\n - stick [I10] quantity 3\n - crafting_table [I15] quantity 25\n - string [I16] quantity 2\n - brewing_stand [I18] quantity 54\n - spruce_trapdoor [I19] quantity 52\n - knowledge_book [I20] quantity 1\n - baked_potato [I21] quantity 21\n - acacia_pressure_plate [I22] quantity 13\n - tripwire_hook [I25] quantity 1\n - magma_block [I26] quantity 30\n - dragon_head [I28] quantity 37\n - coal_ore [I36] quantity 9"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [0] to [I2] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: crossbow\ninventory:\n - orange_bed [I1] quantity 1\n - iron_ingot [I2] quantity 1\n - cave_spider_spawn_egg [I3] quantity 43\n - vex_spawn_egg [I4] quantity 45\n - tnt [I5] quantity 11\n - green_banner [I6] quantity 5\n - diamond_horse_armor [I7] quantity 1\n - white_tulip [I9] quantity 1\n - stick [I10] quantity 3\n - crafting_table [I15] quantity 25\n - string [I16] quantity 2\n - brewing_stand [I18] quantity 54\n - spruce_trapdoor [I19] quantity 52\n - knowledge_book [I20] quantity 1\n - baked_potato [I21] quantity 21\n - acacia_pressure_plate [I22] quantity 13\n - tripwire_hook [I25] quantity 1\n - magma_block [I26] quantity 30\n - dragon_head [I28] quantity 37\n - coal_ore [I36] quantity 9"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I10] to [A1] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: crossbow\ninventory:\n - stick [A1] quantity 1\n - orange_bed [I1] quantity 1\n - iron_ingot [I2] quantity 1\n - cave_spider_spawn_egg [I3] quantity 43\n - vex_spawn_egg [I4] quantity 45\n - tnt [I5] quantity 11\n - green_banner [I6] quantity 5\n - diamond_horse_armor [I7] quantity 1\n - white_tulip [I9] quantity 1\n - stick [I10] quantity 2\n - crafting_table [I15] quantity 25\n - string [I16] quantity 2\n - brewing_stand [I18] quantity 54\n - spruce_trapdoor [I19] quantity 52\n - knowledge_book [I20] quantity 1\n - baked_potato [I21] quantity 21\n - acacia_pressure_plate [I22] quantity 13\n - tripwire_hook [I25] quantity 1\n - magma_block [I26] quantity 30\n - dragon_head [I28] quantity 37\n - coal_ore [I36] quantity 9"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I2] to [A2] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: crossbow\ninventory:\n - stick [A1] quantity 1\n - iron_ingot [A2] quantity 1\n - orange_bed [I1] quantity 1\n - cave_spider_spawn_egg [I3] quantity 43\n - vex_spawn_egg [I4] quantity 45\n - tnt [I5] quantity 11\n - green_banner [I6] quantity 5\n - diamond_horse_armor [I7] quantity 1\n - white_tulip [I9] quantity 1\n - stick [I10] quantity 2\n - crafting_table [I15] quantity 25\n - string [I16] quantity 2\n - brewing_stand [I18] quantity 54\n - spruce_trapdoor [I19] quantity 52\n - knowledge_book [I20] quantity 1\n - baked_potato [I21] quantity 21\n - acacia_pressure_plate [I22] quantity 13\n - tripwire_hook [I25] quantity 1\n - magma_block [I26] quantity 30\n - dragon_head [I28] quantity 37\n - coal_ore [I36] quantity 9"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I10] to [A3] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: crossbow\ninventory:\n - stick [A1] quantity 1\n - iron_ingot [A2] quantity 1\n - stick [A3] quantity 1\n - orange_bed [I1] quantity 1\n - cave_spider_spawn_egg [I3] quantity 43\n - vex_spawn_egg [I4] quantity 45\n - tnt [I5] quantity 11\n - green_banner [I6] quantity 5\n - diamond_horse_armor [I7] quantity 1\n - white_tulip [I9] quantity 1\n - stick [I10] quantity 1\n - crafting_table [I15] quantity 25\n - string [I16] quantity 2\n - brewing_stand [I18] quantity 54\n - spruce_trapdoor [I19] quantity 52\n - knowledge_book [I20] quantity 1\n - baked_potato [I21] quantity 21\n - acacia_pressure_plate [I22] quantity 13\n - tripwire_hook [I25] quantity 1\n - magma_block [I26] quantity 30\n - dragon_head [I28] quantity 37\n - coal_ore [I36] quantity 9"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I16] to [B1] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: crossbow\ninventory:\n - stick [A1] quantity 1\n - iron_ingot [A2] quantity 1\n - stick [A3] quantity 1\n - string [B1] quantity 1\n - orange_bed [I1] quantity 1\n - cave_spider_spawn_egg [I3] quantity 43\n - vex_spawn_egg [I4] quantity 45\n - tnt [I5] quantity 11\n - green_banner [I6] quantity 5\n - diamond_horse_armor [I7] quantity 1\n - white_tulip [I9] quantity 1\n - stick [I10] quantity 1\n - crafting_table [I15] quantity 25\n - string [I16] quantity 1\n - brewing_stand [I18] quantity 54\n - spruce_trapdoor [I19] quantity 52\n - knowledge_book [I20] quantity 1\n - baked_potato [I21] quantity 21\n - acacia_pressure_plate [I22] quantity 13\n - tripwire_hook [I25] quantity 1\n - magma_block [I26] quantity 30\n - dragon_head [I28] quantity 37\n - coal_ore [I36] quantity 9"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I25] to [B2] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: crossbow\ninventory:\n - stick [A1] quantity 1\n - iron_ingot [A2] quantity 1\n - stick [A3] quantity 1\n - string [B1] quantity 1\n - tripwire_hook [B2] quantity 1\n - orange_bed [I1] quantity 1\n - cave_spider_spawn_egg [I3] quantity 43\n - vex_spawn_egg [I4] quantity 45\n - tnt [I5] quantity 11\n - green_banner [I6] quantity 5\n - diamond_horse_armor [I7] quantity 1\n - white_tulip [I9] quantity 1\n - stick [I10] quantity 1\n - crafting_table [I15] quantity 25\n - string [I16] quantity 1\n - brewing_stand [I18] quantity 54\n - spruce_trapdoor [I19] quantity 52\n - knowledge_book [I20] quantity 1\n - baked_potato [I21] quantity 21\n - acacia_pressure_plate [I22] quantity 13\n - magma_block [I26] quantity 30\n - dragon_head [I28] quantity 37\n - coal_ore [I36] quantity 9"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I16] to [B3] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: crossbow\ninventory:\n - stick [A1] quantity 1\n - iron_ingot [A2] quantity 1\n - stick [A3] quantity 1\n - string [B1] quantity 1\n - tripwire_hook [B2] quantity 1\n - string [B3] quantity 1\n - orange_bed [I1] quantity 1\n - cave_spider_spawn_egg [I3] quantity 43\n - vex_spawn_egg [I4] quantity 45\n - tnt [I5] quantity 11\n - green_banner [I6] quantity 5\n - diamond_horse_armor [I7] quantity 1\n - white_tulip [I9] quantity 1\n - stick [I10] quantity 1\n - crafting_table [I15] quantity 25\n - brewing_stand [I18] quantity 54\n - spruce_trapdoor [I19] quantity 52\n - knowledge_book [I20] quantity 1\n - baked_potato [I21] quantity 21\n - acacia_pressure_plate [I22] quantity 13\n - magma_block [I26] quantity 30\n - dragon_head [I28] quantity 37\n - coal_ore [I36] quantity 9"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [I10] to [C2] with quantity 1"
+    },
+    {
+      "role": "user",
+      "content": "Craft an item of type: crossbow\ninventory:\n - crossbow [0] quantity 1\n - stick [A1] quantity 1\n - iron_ingot [A2] quantity 1\n - stick [A3] quantity 1\n - string [B1] quantity 1\n - tripwire_hook [B2] quantity 1\n - string [B3] quantity 1\n - stick [C2] quantity 1\n - orange_bed [I1] quantity 1\n - cave_spider_spawn_egg [I3] quantity 43\n - vex_spawn_egg [I4] quantity 45\n - tnt [I5] quantity 11\n - green_banner [I6] quantity 5\n - diamond_horse_armor [I7] quantity 1\n - white_tulip [I9] quantity 1\n - crafting_table [I15] quantity 25\n - brewing_stand [I18] quantity 54\n - spruce_trapdoor [I19] quantity 52\n - knowledge_book [I20] quantity 1\n - baked_potato [I21] quantity 21\n - acacia_pressure_plate [I22] quantity 13\n - magma_block [I26] quantity 30\n - dragon_head [I28] quantity 37\n - coal_ore [I36] quantity 9"
+    },
+    {
+      "role": "assistant",
+      "content": "move: from [0] to [I2] with quantity 1"
+    }
+  ],
+  "example_id": "TRAIN0367"
+}
