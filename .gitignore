@@ -1,0 +1,81 @@
+# Environment files
+.env
+*.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# BrowseComp-Plus: Exclude large data files
+environment/BrowseComp-Plus/dataset/browsecomp_plus_decrypted.jsonl
+environment/BrowseComp-Plus/dataset/corpus.jsonl
+environment/BrowseComp-Plus/dataset/indexes/
+
+# Hugging Face cache
+.cache/
+hf_cache/
+huggingface/
+
+# Model checkpoints (large files)
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.safetensors
+
+# Logs
+*.log
+logs/
+wandb/
+
+# OS
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+my_code/results/
+environment/WorkBench/dataset/*
+environment/BrowseComp-Plus/dataset/*
+
+# WorkBench temporary workspace folders
+environment/WorkBench/_temp_workspace/
+vertex-ai-credentials.json

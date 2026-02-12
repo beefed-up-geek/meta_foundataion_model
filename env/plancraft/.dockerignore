@@ -1,7 +1,0 @@
-.env
-docs/
-wandb/
-__pycache__/
-*.pyc
-.venv/
-.vscode/

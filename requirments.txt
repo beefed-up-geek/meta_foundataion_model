@@ -1,0 +1,114 @@
+# ===================================================================
+# Meta Foundation Model Project - Unified Requirements
+# ===================================================================
+# This file contains all Python dependencies for all benchmark environments.
+# Install all: pip install -r requirements.txt
+# ===================================================================
+
+# -------------------------------------------------------------------
+# Core Libraries (Used by multiple environments)
+# -------------------------------------------------------------------
+numpy>=1.26.3
+pandas>=2.1.4
+tqdm>=4.66.1
+requests>=2.31.0
+python-dotenv>=1.2.1
+PyYAML>=6.0.1
+
+# -------------------------------------------------------------------
+# BrowseComp-Plus Environment
+# -------------------------------------------------------------------
+
+# Data & Models
+datasets>=2.16.0
+huggingface-hub>=0.20.3
+transformers>=4.37.2
+torch>=2.0.0
+tokenizers>=0.15.2
+safetensors>=0.4.2
+
+# Retrieval Systems
+faiss-cpu>=1.7.4  # Use faiss-gpu if you have NVIDIA GPU
+pyserini>=0.24.0  # For BM25 search
+tevatron>=0.1.0   # For dense retrieval
+
+# LLM APIs
+openai>=1.0.0
+anthropic>=0.18.1
+
+# Evaluation
+vllm>=0.3.0  # For LLM-as-Judge evaluation
+rich>=13.0.0  # For pretty printing
+
+# -------------------------------------------------------------------
+# WorkBench Environment
+# -------------------------------------------------------------------
+
+# LangChain ecosystem
+langchain>=0.1.11
+langchain-anthropic>=0.1.1
+langchain-community>=0.0.25
+langchain-core>=0.1.29
+langchain-experimental>=0.0.50
+langchain-openai>=0.0.2.post1
+langchain-text-splitters>=0.0.1
+langchainhub>=0.1.14
+langsmith>=0.1.19
+
+# Database & Data Processing
+SQLAlchemy>=1.4.49
+snowflake-connector-python>=3.7.0
+snowflake-snowpark-python>=1.12.1
+snowflake-sqlalchemy>=1.4.7
+pyarrow>=8.0.0
+
+# ML & NLP
+sentence-transformers>=2.3.1
+sentencepiece>=0.1.99
+nltk>=3.8.1
+scikit-learn>=1.4.0
+scipy>=1.12.0
+
+# Visualization
+matplotlib>=3.8.3
+seaborn>=0.13.2
+
+# Testing
+pytest>=7.4.4
+
+# -------------------------------------------------------------------
+# finance-agent Environment
+# -------------------------------------------------------------------
+
+# Model library (finance-specific)
+model-library>=0.1.7
+
+# Web scraping & APIs
+beautifulsoup4>=4.12.3
+google-search-results>=2.4.2  # SerpAPI
+sec-api>=1.0.29  # SEC EDGAR API
+
+# Utilities
+backoff>=2.2.1
+aiohttp>=3.9.1
+
+# -------------------------------------------------------------------
+# MATH-500 & aime25 Environments
+# -------------------------------------------------------------------
+# These environments use pre-included datasets and don't require
+# additional packages beyond what's needed for your evaluation script.
+# If you're using LLM APIs for evaluation, the openai/anthropic
+# packages above are sufficient.
+
+# -------------------------------------------------------------------
+# Common Dependencies (Auto-resolved by above packages)
+# -------------------------------------------------------------------
+# The following are typically auto-installed as dependencies,
+# but listed here for reference:
+#
+# certifi, charset-normalizer, urllib3, idna
+# click, Jinja2, MarkupSafe
+# pydantic, pydantic_core
+# typing_extensions, mypy-extensions
+# filelock, fsspec, platformdirs
+# packaging, setuptools, wheel
